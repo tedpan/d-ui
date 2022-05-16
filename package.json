@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "f2elint": "^2.2.1"
+    "f2elint": "^2.2.1",
+    "typescript": "^4.6.4"
   },
   "husky": {
     "hooks": {
