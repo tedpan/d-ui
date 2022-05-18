@@ -8,6 +8,7 @@
     "dev": "dumi dev",
     "build:site": "rimraf doc-site && dumi build",
     "preview:site": "npm run build:site && serve doc-site",
+    "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
     "f2elint-scan": "f2elint scan",
     "f2elint-fix": "f2elint fix"
   },
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/react": "^18.0.9",
     "@types/react-dom": "^16.9.16",
+    "cpr": "^3.0.1",
     "dumi": "^1.1.40",
     "f2elint": "^2.2.1",
     "react": "^17.0.2",
