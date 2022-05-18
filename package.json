@@ -4,6 +4,12 @@
   "description": "an ui lib for practice",
   "main": "lib/index.js",
   "module": "esm/index.js",
+  "sideEffects": [
+    "dist/*",
+    "esm/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
   "scripts": {
     "init": "f2elint init",
     "dev": "dumi dev",
