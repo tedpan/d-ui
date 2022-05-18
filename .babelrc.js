@@ -17,4 +17,31 @@ module.exports = {
     ],
     '@babel/plugin-proposal-class-properties',
   ],
+  env: {
+    // process.env.BABEL_ENV 指定环境获取配置，该配置会与顶级配置合并。
+    esm: {
+      presets: [
+        [
+          '@babel/preset-env',
+          //关闭模块转换；
+          {
+            modules: false,
+          },
+        ],
+      ],
+      plugins: [
+        [
+          '@babel/plugin-transform-runtime',
+          {
+            // 使用ESM形式引入helper函数。
+            useESModules: true,
+            corejs: {
+              version: 3,
+              proposals: true,
+            },
+          },
+        ],
+      ],
+    },
+  },
 };
