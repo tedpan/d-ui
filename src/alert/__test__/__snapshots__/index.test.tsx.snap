@@ -1,0 +1,48 @@
+// Vitest Snapshot v1
+
+exports[`<Alert /> > should render default 1`] = `
+<div>
+  <div
+    class="d-alert"
+    style="background: rgb(83, 82, 237);"
+  >
+    default
+  </div>
+</div>
+`;
+
+exports[`<Alert /> > should render default 2`] = `
+<div
+  class="d-alert"
+  style="background: rgb(83, 82, 237);"
+>
+  info
+</div>
+`;
+
+exports[`<Alert /> > should render default 3`] = `
+<div
+  class="d-alert"
+  style="background: rgb(255, 165, 2);"
+>
+  warning
+</div>
+`;
+
+exports[`<Alert /> > should render default 4`] = `
+<div
+  class="d-alert"
+  style="background: rgb(46, 213, 115);"
+>
+  positive
+</div>
+`;
+
+exports[`<Alert /> > should render default 5`] = `
+<div
+  class="d-alert"
+  style="background: rgb(255, 71, 87);"
+>
+  negative
+</div>
+`;

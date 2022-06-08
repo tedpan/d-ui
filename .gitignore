@@ -4,3 +4,4 @@ lib
 esm
 dist
 doc-site
+coverage
