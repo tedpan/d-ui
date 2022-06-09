@@ -1,26 +1,8 @@
 import React from 'react';
-import { render } from '../../utils/test-utils';
+import { render } from '@testing-library/react';
 import Alert from '../index';
 
 describe('<Alert />', () => {
-  test('should render in dom', () => {
-    const { container } = render(<Alert>default</Alert>);
-    expect(container).toBeInTheDocument();
-    const kinds: any[] = ['info', 'warning', 'positive', 'negative'];
-    const { getByText } = render(
-      <>
-        {kinds.map((k) => (
-          <Alert kind={k} key={k}>
-            {k}
-          </Alert>
-        ))}
-      </>,
-    );
-    kinds.forEach((k) => {
-      expect(getByText(k)).toBeInTheDocument();
-    });
-  });
-
   test('should render default', () => {
     const { container } = render(<Alert>default</Alert>);
     expect(container).toMatchSnapshot();
